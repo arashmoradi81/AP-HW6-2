@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Address.h"
+#include <cstring>
 
 using namespace std;
 
@@ -22,13 +23,17 @@ public:
 
     const string &getId() const;
 
-    void setId(const string &id);
+    void setId(const string& i);
 
     const Address &getAddress() const;
 
     void setAddress(const Address &address);
 
-    const Person& operator =(const Person& p);
+    Person& operator =(const Person& p);
+
+    bool validate(string id);
+
+    bool isInt(char str);
 };
 
 

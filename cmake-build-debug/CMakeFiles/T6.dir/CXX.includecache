@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+G:/Arash/c++ clion/T6/Address.cpp
+Address.h
+G:/Arash/c++ clion/T6/Address.h
+
+G:/Arash/c++ clion/T6/Address.h
+iostream
+G:/Arash/c++ clion/T6/iostream
+
+G:/Arash/c++ clion/T6/Person.cpp
+Person.h
+G:/Arash/c++ clion/T6/Person.h
+
+G:/Arash/c++ clion/T6/Person.h
+iostream
+-
+Address.h
+G:/Arash/c++ clion/T6/Address.h
+cstring
+-
+
+G:/Arash/c++ clion/T6/main.cpp
+Person.h
+G:/Arash/c++ clion/T6/Person.h
+Address.h
+G:/Arash/c++ clion/T6/Address.h
+Address.cpp
+G:/Arash/c++ clion/T6/Address.cpp
+Person.cpp
+G:/Arash/c++ clion/T6/Person.cpp
+iostream
+-
+

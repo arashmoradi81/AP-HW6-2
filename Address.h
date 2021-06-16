@@ -11,6 +11,7 @@ private:
     string street;
 public:
     Address();
+
     void setCountry(const string& country);
 
     const string &getCountry() const;
