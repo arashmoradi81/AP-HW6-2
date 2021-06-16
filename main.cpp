@@ -1,8 +1,9 @@
+#include "Person.h"
 #include <iostream>
-#include "Address.h"
+
+using namespace std;
+
 int main() {
-    Address a;
-    a.setCountry("iran");
 
     return 0;
 }
