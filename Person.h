@@ -31,7 +31,7 @@ public:
 
     Person& operator =(const Person& p);
 
-    bool validate(string id);
+    virtual bool validate(string id);
 
     bool isInt(char str);
 };

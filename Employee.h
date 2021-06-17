@@ -31,6 +31,12 @@ public:
     int getWorkDone() const;
 
     void setWorkDone(int workDone);
+
+    bool validate(string id) override;
+
+    int calculateSalary() const;
+
+    int efficiency() const;
 };
 
 

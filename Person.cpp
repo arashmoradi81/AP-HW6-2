@@ -25,7 +25,12 @@ const string &Person::getId() const {
 }
 
 void Person::setId(const string &i) {
-    id = i;
+    if (validate(i))
+        id = i;
+    else{
+        cout<<" invalid id !"<<endl;
+        return;
+    }
 }
 
 const Address &Person::getAddress() const {
