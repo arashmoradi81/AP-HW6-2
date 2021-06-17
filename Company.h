@@ -26,6 +26,8 @@ public:
     Employee *const *getEmployee() const;
 
     Employee maxEfficiency();
+
+    double averageEfficiency();
 };
 
 
