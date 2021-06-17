@@ -10,9 +10,9 @@ private:
     int workToDo;
     int workDone;
 public:
-    Employee();
+    Employee(int hourWork,int salaryPerHour,int workToDo,int workDone,Person person);
 
-    Employee(const Employee &e);
+    Employee( const Employee &e);
 
     Employee& operator = (const Employee& e);
 

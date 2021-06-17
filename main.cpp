@@ -4,20 +4,23 @@
 #include "Address.cpp"
 #include "Employee.h"
 #include "Employee.cpp"
+#include "Boss.h"
+#include "Boss.cpp"
+
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    Address a;
-    Person p;
-    a.setCountry("iran");
-    cout<<a.getCountry()<<endl;
-    p.setId("85e59523");
-    cout<<p.getId()<<endl;
-    cout<<p.validate("85eft89423");
-    Person p1;
-    p1=p;
-    cout<<p.getId()<<endl;
+    Address a("iran","tahran","azadi");
+    Person p("arash","85*ft89723",a);
+    Person g("arvin","85*ft89723",a);
+    Address b=p.getAddress();
+    cout<<b.getStreet();
+    Employee e(10,2,8,8,p);
+    Employee f(10,2,8,8,g);
+    Employee s=f;
+    s=e;
+    cout<<s.getName();
     return 0;
 }

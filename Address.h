@@ -10,7 +10,7 @@ private:
     string city;
     string street;
 public:
-    Address();
+    Address(string country,string city,string street);
 
     void setCountry(const string& country);
 

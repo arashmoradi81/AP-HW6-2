@@ -1,15 +1,17 @@
 #include "Person.h"
 
-Person::Person() {
-    name = "";
-    id = "";
-    address = {};
+Person::Person(string name,string id,Address address):address(address) {
+    if (!validate(id)){
+        cout<<" invalid id ! "<<endl;
+        exit(1);
+    }
+    Person::name=name;
+    Person::id=id;
 }
 
-Person::Person(const Person &p) {
+Person::Person(const Person &p):address(p.address) {
     name = p.name;
     id = p.id;
-    address = p.address;
 }
 
 const string &Person::getName() const {
@@ -24,13 +26,8 @@ const string &Person::getId() const {
     return id;
 }
 
-void Person::setId(const string &i) {
-    if (validate(i))
-        id = i;
-    else{
-        cout<<" invalid id !"<<endl;
-        return;
-    }
+void Person::setId(const string &id) {
+    Person::id=id;
 }
 
 const Address &Person::getAddress() const {

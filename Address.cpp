@@ -1,10 +1,10 @@
 #include "Address.h"
 
 
-Address::Address() {
-    country= "";
-    city= "";
-    street= "";
+Address::Address(string country,string city,string street) {
+    Address::country=country;
+    Address::city= city;
+    Address::street= street;
 }
 
 void Address::setCountry(const string &country) {

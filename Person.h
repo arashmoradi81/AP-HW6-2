@@ -13,7 +13,7 @@ private:
     string id;
     Address address;
 public:
-    Person();
+    Person(string name,string id,Address address);
 
     Person(const Person &p);
 
@@ -23,7 +23,7 @@ public:
 
     const string &getId() const;
 
-    void setId(const string& i);
+    void setId(const string& id);
 
     const Address &getAddress() const;
 

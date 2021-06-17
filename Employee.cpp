@@ -1,13 +1,17 @@
 #include "Employee.h"
 
-Employee::Employee() {
-    hourWork=0;
-    salaryPerHour=0;
-    workToDo=0;
-    workDone=0;
+Employee::Employee(int hourWork,int salaryPerHour,int workToDo,int workDone,Person person):Person(person) {
+    if (!validate(person.getId())){
+        cout<<" invalid id ! "<<endl;
+        exit(1);
+    }
+    Employee::hourWork=hourWork;
+    Employee::salaryPerHour=salaryPerHour;
+    Employee::workToDo=workToDo;
+    Employee::workDone=workDone;
 }
 
-Employee::Employee(const Employee &e) {
+Employee::Employee( const Employee &e) : Person(e) {
     hourWork=e.hourWork;
     salaryPerHour=e.salaryPerHour;
     workToDo=e.workToDo;
@@ -19,6 +23,9 @@ Employee &Employee::operator=(const Employee &e) {
     this->salaryPerHour=e.salaryPerHour;
     this->workToDo=e.workToDo;
     this->workDone=e.workDone;
+    this->setName(e.getName());
+    this->setId(e.getId());
+    this->setAddress(e.getAddress());
     return *this;
 }
 
