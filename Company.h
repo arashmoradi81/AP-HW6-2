@@ -34,6 +34,8 @@ public:
     void gift();
 
     void payForService();
+
+    bool isEnoughBudget();
 };
 
 

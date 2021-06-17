@@ -86,3 +86,14 @@ void Company::payForService() {
         }
     }
 }
+
+bool Company::isEnoughBudget() {
+    int sum=0;
+    for (int i = 0; i < boss->getNumberOfEmployees(); ++i) {
+        sum+=employee[i]->calculateSalary();
+    }
+    if (sum<budget)
+        return true;
+    else
+        return false;
+}
