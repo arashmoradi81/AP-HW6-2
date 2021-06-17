@@ -24,6 +24,8 @@ public:
     void setBoss(Boss *boss);
 
     Employee *const *getEmployee() const;
+
+    Employee maxEfficiency();
 };
 
 

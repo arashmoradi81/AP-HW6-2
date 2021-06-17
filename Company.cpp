@@ -38,3 +38,15 @@ void Company::setBoss(Boss *boss) {
 Employee *const *Company::getEmployee() const {
     return employee;
 }
+
+Employee Company::maxEfficiency() {
+    int x=0;
+    int max=employee[0]->efficiency();
+    for (int i = 1; i < boss->getNumberOfEmployees(); ++i) {
+        if (employee[i]->efficiency()>max) {
+            max = employee[i]->efficiency();
+            x=i;
+        }
+    }
+    return *employee[x];
+}
