@@ -14,6 +14,22 @@ G:/Arash/c++ clion/T6/Address.h
 iostream
 G:/Arash/c++ clion/T6/iostream
 
+G:/Arash/c++ clion/T6/Boss.cpp
+Boss.h
+G:/Arash/c++ clion/T6/Boss.h
+
+G:/Arash/c++ clion/T6/Boss.h
+Employee.h
+G:/Arash/c++ clion/T6/Employee.h
+
+G:/Arash/c++ clion/T6/Employee.cpp
+Employee.h
+G:/Arash/c++ clion/T6/Employee.h
+
+G:/Arash/c++ clion/T6/Employee.h
+Person.h
+G:/Arash/c++ clion/T6/Person.h
+
 G:/Arash/c++ clion/T6/Person.cpp
 Person.h
 G:/Arash/c++ clion/T6/Person.h
@@ -29,12 +45,20 @@ cstring
 G:/Arash/c++ clion/T6/main.cpp
 Person.h
 G:/Arash/c++ clion/T6/Person.h
+Person.cpp
+G:/Arash/c++ clion/T6/Person.cpp
 Address.h
 G:/Arash/c++ clion/T6/Address.h
 Address.cpp
 G:/Arash/c++ clion/T6/Address.cpp
-Person.cpp
-G:/Arash/c++ clion/T6/Person.cpp
+Employee.h
+G:/Arash/c++ clion/T6/Employee.h
+Employee.cpp
+G:/Arash/c++ clion/T6/Employee.cpp
+Boss.h
+G:/Arash/c++ clion/T6/Boss.h
+Boss.cpp
+G:/Arash/c++ clion/T6/Boss.cpp
 iostream
 -
 

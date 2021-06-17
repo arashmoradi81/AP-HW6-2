@@ -34,7 +34,7 @@ public:
 
     bool validate(string id) override;
 
-    int calculateSalary() const;
+    virtual int calculateSalary() const;
 
     int efficiency() const;
 };

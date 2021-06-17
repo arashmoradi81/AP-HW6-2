@@ -27,3 +27,9 @@ Boss &Boss::operator=(const Boss &b) {
     this->setAddress(b.getAddress());
     return *this;
 }
+
+int Boss::calculateSalary() const {
+    int s=getHourWork()*getSalaryPerHour()*getWorkDone()/getWorkToDo();
+    s*=(115/100);
+    return s;
+}

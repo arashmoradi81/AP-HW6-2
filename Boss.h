@@ -16,6 +16,8 @@ public:
     void setNumberOfEmployees(int n);
 
     Boss& operator = (const Boss& b);
+
+    int calculateSalary() const override;
 };
 
 

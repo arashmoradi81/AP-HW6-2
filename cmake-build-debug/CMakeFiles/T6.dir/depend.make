@@ -3,6 +3,10 @@
 
 CMakeFiles/T6.dir/main.cpp.obj: ../Address.cpp
 CMakeFiles/T6.dir/main.cpp.obj: ../Address.h
+CMakeFiles/T6.dir/main.cpp.obj: ../Boss.cpp
+CMakeFiles/T6.dir/main.cpp.obj: ../Boss.h
+CMakeFiles/T6.dir/main.cpp.obj: ../Employee.cpp
+CMakeFiles/T6.dir/main.cpp.obj: ../Employee.h
 CMakeFiles/T6.dir/main.cpp.obj: ../Person.cpp
 CMakeFiles/T6.dir/main.cpp.obj: ../Person.h
 CMakeFiles/T6.dir/main.cpp.obj: ../main.cpp
