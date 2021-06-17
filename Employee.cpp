@@ -121,12 +121,12 @@ int Employee::efficiency() const {
     return (workDone*100/workToDo);
 }
 
-ostream &operator<<(ostream out, Employee a) {
-    out<<"hourWork:"<<a.getHourWork()<<",salaryPerHour:"<<a.getSalaryPerHour()<<",workToDo:"<<a.workToDo<<",workDone:"<<a.workDone;
-    return out;
-}
-
-istream &operator>>(istream in, Employee a) {
-    in>>a.hourWork>>a.salaryPerHour>>a.workToDo>>a.workDone;
-    return in;
-}
+//ostream &operator<<(ostream out, Employee a) {
+//    out<<"hourWork:"<<a.getHourWork()<<",salaryPerHour:"<<a.getSalaryPerHour()<<",workToDo:"<<a.workToDo<<",workDone:"<<a.workDone;
+//    return out;
+//}
+//
+//istream &operator>>(istream in, Employee a) {
+//    in>>a.hourWork>>a.salaryPerHour>>a.workToDo>>a.workDone;
+//    return in;
+//}

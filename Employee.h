@@ -38,9 +38,9 @@ public:
 
     int efficiency() const;
 
-    friend ostream& operator << (ostream out,Employee a);
-
-    friend istream& operator >> (istream in,Employee a);
+//    friend ostream& operator << (ostream out,Employee a);
+//
+//    friend istream& operator >> (istream in,Employee a);
 };
 
 

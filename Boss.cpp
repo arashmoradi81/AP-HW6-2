@@ -34,12 +34,12 @@ int Boss::calculateSalary() const {
     return s;
 }
 
-ostream &operator<<(ostream out, Boss a) {
-    out<<"numberOfEmployee:"<<a.numberOfEmployees;
-    return out;
-}
-
-istream &operator>>(istream in, Boss a) {
-    in>>a.numberOfEmployees;
-    return in;
-}
+//ostream &operator<<(ostream out, Boss a) {
+//    out<<"numberOfEmployee:"<<a.numberOfEmployees;
+//    return out;
+//}
+//
+//istream &operator>>(istream in, Boss a) {
+//    in>>a.numberOfEmployees;
+//    return in;
+//}

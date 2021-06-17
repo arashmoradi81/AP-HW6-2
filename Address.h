@@ -24,9 +24,9 @@ public:
 
     void setStreet(const string &street);
 
-    friend ostream& operator << (ostream out,Address a);
-
-    friend istream& operator >> (istream in,Address a);
+//    friend ostream& operator << (ostream out,Address a);
+//
+//    friend istream& operator >> (istream in,Address a);
 };
 
 

@@ -104,12 +104,12 @@ bool Person::isInt(char str) {
         return false;
 }
 
-ostream &operator<<(ostream out, Person a) {
-    out<<"name:"<<a.getName()<<",id:"<<a.getId();
-    return out;
-}
-
-istream &operator>>(istream in, Person a) {
-    in>>a.name>>a.id;
-    return in;
-}
+//ostream &operator<<(ostream out, Person a) {
+//    out<<"name:"<<a.getName()<<",id:"<<a.getId();
+//    return out;
+//}
+//
+//istream &operator>>(istream in, Person a) {
+//    in>>a.name>>a.id;
+//    return in;
+//}

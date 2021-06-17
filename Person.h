@@ -35,9 +35,9 @@ public:
 
     bool isInt(char str);
 
-    friend ostream& operator << (ostream out,Person a);
-
-    friend istream& operator >> (istream in,Person a);
+//    friend ostream& operator << (ostream out,Person a);
+//
+//    friend istream& operator >> (istream in,Person a);
 };
 
 
