@@ -2,8 +2,10 @@
 
 Company::Company(int budget,Boss* boss,Employee* employee[]) {
     Company::budget=budget;
-    *Company::boss=boss;
-    *Company::employee=*employee;
+    Company::boss=boss;
+    for (int i = 0; i < boss->getNumberOfEmployees(); ++i) {
+        this->employee[i]=employee[i];
+    }
 }
 
 Company::Company(const Company &c) {
@@ -61,7 +63,9 @@ double Company::averageEfficiency() {
 
 void Company::swapBossEmployee() {
     if (boss->efficiency()<40){
-        swap(boss,maxEfficiency());
+        Employee temp=*maxEfficiency();
+        *maxEfficiency()=static_cast<Employee>(*boss);
+        *boss=static_cast<Boss&>(temp);
     }
 }
 
