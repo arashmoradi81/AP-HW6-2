@@ -18,6 +18,10 @@ public:
     Boss& operator = (Boss *b);
 
     int calculateSalary() const override;
+
+    friend ostream& operator << (ostream out,Boss a);
+
+    friend istream& operator >> (istream in,Boss a);
 };
 
 

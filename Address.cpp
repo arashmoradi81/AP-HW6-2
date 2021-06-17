@@ -31,3 +31,13 @@ void Address::setStreet(const string &street) {
     Address::street = street;
 }
 
+ostream &operator<<(ostream out,Address a) {
+    out<<"country:"<<a.getCountry()<<",city:"<<a.getCity()<<",street:"<<a.getStreet()<<endl;
+    return out;
+}
+
+istream &operator>>(istream in,Address a) {
+    in>>a.country>>a.city>>a.street;
+    return in;
+}
+
