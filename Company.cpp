@@ -97,3 +97,11 @@ bool Company::isEnoughBudget() {
     else
         return false;
 }
+
+void Company::saveFile() {
+    ofstream file("listSales.txt");
+    for (int i = 0; i < boss->getNumberOfEmployees(); ++i) {
+        file <<"name: "<< employee[i]->getName() << "   id: " << employee[i]->getId()<<
+        "   efficiency: "<<employee[i]->efficiency()<<"%   salary: "<<employee[i]->calculateSalary()<<endl;
+    }
+}

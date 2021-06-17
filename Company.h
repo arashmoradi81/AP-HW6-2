@@ -2,6 +2,7 @@
 #define T6_COMPANY_H
 
 #include "Boss.h"
+#include <fstream>
 
 class Company {
 private:
@@ -36,6 +37,8 @@ public:
     void payForService();
 
     bool isEnoughBudget();
+
+    void saveFile();
 };
 
 
