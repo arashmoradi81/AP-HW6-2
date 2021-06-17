@@ -32,6 +32,8 @@ public:
     void swapBossEmployee();
 
     void gift();
+
+    void payForService();
 };
 
 

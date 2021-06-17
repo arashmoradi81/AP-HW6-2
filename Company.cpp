@@ -78,3 +78,11 @@ void Company::gift() {
         employee1.setHourWork(employee1.getHourWork()+10);
     }
 }
+
+void Company::payForService() {
+    for (int i = 0; i < boss->getNumberOfEmployees(); ++i) {
+        if (employee[i]->getAddress().getCity()!="tehran"){
+            employee[i]->setHourWork(employee[i]->getHourWork()+7);
+        }
+    }
+}
