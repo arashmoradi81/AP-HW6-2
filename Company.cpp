@@ -39,7 +39,7 @@ Employee *const *Company::getEmployee() const {
     return employee;
 }
 
-Employee Company::maxEfficiency() {
+Employee* Company::maxEfficiency() {
     int x=0;
     int max=employee[0]->efficiency();
     for (int i = 1; i < boss->getNumberOfEmployees(); ++i) {
@@ -48,7 +48,7 @@ Employee Company::maxEfficiency() {
             x=i;
         }
     }
-    return *employee[x];
+    return employee[x];
 }
 
 double Company::averageEfficiency() {
@@ -57,4 +57,24 @@ double Company::averageEfficiency() {
         sum+=employee[i]->efficiency();
     }
     return (double)sum/boss->getNumberOfEmployees();
+}
+
+void Company::swapBossEmployee() {
+    if (boss->efficiency()<40){
+        swap(boss,maxEfficiency());
+    }
+}
+
+void Company::gift() {
+    for (int i = 0; i < boss->getNumberOfEmployees(); ++i) {
+        string id=employee[i]->getId();
+        char yearId[2];
+        yearId[0] = id[0];
+        yearId[1] = id[1];
+        int year = stoi(yearId);
+        if (year<90)
+            employee[i]->setHourWork(employee[i]->getHourWork()+5);
+        Employee& employee1= *maxEfficiency();
+        employee1.setHourWork(employee1.getHourWork()+10);
+    }
 }

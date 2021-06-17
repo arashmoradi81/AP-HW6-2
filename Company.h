@@ -25,9 +25,13 @@ public:
 
     Employee *const *getEmployee() const;
 
-    Employee maxEfficiency();
+    Employee* maxEfficiency();
 
     double averageEfficiency();
+
+    void swapBossEmployee();
+
+    void gift();
 };
 
 
