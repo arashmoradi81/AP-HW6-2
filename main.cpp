@@ -6,6 +6,8 @@
 #include "Employee.cpp"
 #include "Boss.h"
 #include "Boss.cpp"
+#include "Company.h"
+#include "Company.cpp"
 
 #include <iostream>
 

@@ -16,7 +16,7 @@ void Boss::setNumberOfEmployees(int n) {
     numberOfEmployees = n;
 }
 
-Boss &Boss::operator=(const Boss &b) {
+Boss &Boss::operator=(Boss *b) {
     this->numberOfEmployees=b.numberOfEmployees;
     this->setHourWork(b.getHourWork());
     this->setSalaryPerHour(b.getSalaryPerHour());
